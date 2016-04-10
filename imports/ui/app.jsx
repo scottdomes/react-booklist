@@ -1,4 +1,5 @@
 import React from 'react';
+import AddBookForm from './add_book_form'
 // import React, { Component } from 'react';
 
 
@@ -16,14 +17,7 @@ export default React.createClass({
           { books.map((item, index) => <li className="list-group-item" key={index}>{item}</li> )}
         </ul>
         <div className="row">
-          <div className="form-group">
-            <div className="col-md-10">
-              <input className="form-control" type="text" placeholder="Add a book" />
-            </div>
-            <div className="col-md-2">
-              <button className="btn btn-default">Add!</button>
-            </div>
-          </div>
+          <AddBookForm />
         </div>
       </div>
     )
